@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="cap13.css">
+
+      <title>ARW2024 - CAP13</title>
+   </head>
+
+   <style>
+      .navbarz {
+  font-family: 'CustomFont', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+}
+
+.nav-linksz {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 60px;
+  left: 60px; 
+  background-color: #e5881d;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  font-family: 'CustomFont', sans-serif;
+
+}
+
+.nav-linksz.active {
+  display: block;
+}
+
+.nav-linksz li {
+  text-align: center;
+  margin: 10px 0;
+  font-family: 'CustomFont', sans-serif;
+}
+
+.nav-linksz a {
+  font-size: 1vw;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  font-family: 'CustomFont', sans-serif;
+}
+
+.nav-linksz a:hover {
+  background-color: #992C23 ;
+  border-radius: 5px;
+}
+
+.hamburgerz {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 20px; 
+  margin-left: 2vw;
+}
+
+.hamburgerz span {
+  height: 4px;
+  width: 25px;
+  background-color: #e5881d;
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbarz {
+   margin-top: 7vw;
+    padding: 10px;
+    width: 100%; 
+    height: 0vw; 
+  }
+
+  .nav-linksz {
+    width: 100%; 
+    left: 0; 
+  }
+
+  .nav-linksz a {
+    margin-top: 8vw;
+  font-size: 3vw;;
+    width: 100%;
+  }
+}
+
+
+  </style>
+  <div class="navbarz">
+      <div class="hamburgerz">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-linksz">
+         <li><a href="../../index.html">Homepage</a></li>
+        <li><a href="cap13.html">Cap13</a></li>
+        <li><a href="../orgmain.html">Organizations</a></li>
+        <li><a href="../../tributes/triburtes.html">Tributes of the Court</a></li>
+        <li><a href="../../district/district.html">The 12 Districts</a></li>
+        <li><a href="../../faqs/faqs.html">FAQS</a></li>
+        <li><a href="../../about/about.html">ABOUT</a></li>
+        
+      </ul>
+    </div>
+   </div>
+  
+    <script>
+      document.querySelector('.hamburgerz').addEventListener('click', () => {
+        document.querySelector('.nav-linksz').classList.toggle('active');
+      });
+    </script>
+
+
+
+   <div>
+    <h2 class="responsive-heading">CAP13</h2>
+</div>
+
+   <body>
+
+    <div id="loading-screen">
+        <img src="images/home/loading.gif" alt="Loading..."> 
+    </div>
+
+
+ 
+
+      <section class="container">
+         <div class="card__container swiper">
+            <div class="card__content">
+               <div class="swiper-wrapper">
+
+                  <a href="amstud.html"> 
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/arw.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+      
+                        <a href="amstud.html" class="card__button">AMSTUD</a>
+                     </div>
+                  </article>
+                  </a>
+                  
+                  <a href="bss.html"> 
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/arw.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+                        <a href="bss.html" class="card__button">BSS</a>
+                     </div>
+                  </article>
+               </a>
+                  
+
+               <a href="cultura.html"> 
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/arw.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+      
+                        <a href="cultura.html" class="card__button">CULTURA</a>
+                     </div>
+                  </article>
+               </a>
+
+
+               <a href="devint.html"> 
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/arw.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+      
+                        <a href="devint.html" class="card__button">DEVINT</a>
+                     </div>
+                  </article>
+               </a>
+
+               <a href="season.html"> 
+                  <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/arw.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+     
+                       <a href="season.html" class="card__button">DLSU-SEASON</a>
+                    </div>
+                 </article>
+               </a>
+
+
+               <a href="esa.html"> 
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/arw.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+     
+                       <a href="esa.html" class="card__button">ESA</a>
+                    </div>
+                 </article>
+               </a>
+
+
+               <a href="nkk.html"> 
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/arw.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+     
+                       <a href="nkk.html" class="card__button">NKK</a>
+                    </div>
+                 </article>
+               </a>
+
+
+               <a href="pilosopo.html"> 
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/arw.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+     
+                       <a href="pilosopo.html" class="card__button">PILOSOPO</a>
+                    </div>
+                 </article>
+               </a>
+
+
+
+
+               <a href="poliscy.html"> 
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/arw.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+     
+                       <a href="poliscy.html" class="card__button">POLISCY</a>
+                    </div>
+                 </article>
+               </a>
+
+
+               <a href="sdh.html"> 
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/arw.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+     
+                       <a href="sdh.html" class="card__button">SDH</a>
+                    </div>
+                 </article>
+               </a>
+
+
+
+
+
+               <a href="teamcomm.html"> 
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/arw.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+     
+                       <a href="teamcomm.html" class="card__button">TEAMCOMM</a>
+                    </div>
+                 </article>
+               </a>
+
+                 
+
+      
+            </div>
+
+            <div class="swiper-button-next">
+               <i class="ri-arrow-right-s-line"></i>
+            </div>
+            
+            <div class="swiper-button-prev">
+               <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
+         </div>
+      </section>
+      
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

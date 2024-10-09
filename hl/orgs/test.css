@@ -1,0 +1,92 @@
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('font/TelegrafUltraBold800.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('font/TelegrafUltraLight200.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('font/TelegrafRegular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+font-family: 'Telegraf', sans-serif;
+
+
+
+/*******************************MISSION-VISION*********************************/
+.mission-vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Use space-between for better distribution */
+    align-items: flex-start;
+    margin: 0;
+    margin-bottom: -10px; 
+}
+
+.MissionVission {
+    width: 100%; 
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+}
+
+.MissionVission h2 {
+    color: #ffb660;
+    font-size: 8vw; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.MissionVission p {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 3vw; 
+    line-height: 1.5;
+    text-align: justify;
+    font-family: 'Telegraf', sans-serif;
+    margin-bottom: 170px;
+}
+
+@media only screen and (min-width: 768px) {
+    .mission-vision-container {
+        flex-direction: row; 
+        margin-bottom: 50px; /* Adjust margin for better spacing */
+    }
+
+    .MissionVission {
+        width: 45%; 
+        margin-bottom: 0; 
+    }
+
+    .MissionVission h2 {
+        font-size: 3em; /* Use em for better scaling */
+    }
+
+    .MissionVission p {
+        font-size: 1.5em; /* Use em for better scaling */
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.button-container {
+    display: flex;               /* Use flexbox for layout */
+    justify-content: center;     /* Center the buttons horizontally */
+    align-items: center;         /* Center the buttons vertically */
+    gap: 10px;                   /* Space between buttons */
+    margin: 20px;                /* Margin around the container */
+    margin-bottom: 90px;
+}
+

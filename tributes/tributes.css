@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('font/hg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('font/TelegrafUltraBold800.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('font/TelegrafUltraLight200.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('font/TelegrafRegular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0eddb;
+    margin: 0;
+    font-family: 'CustomFont', sans-serif;
+    border: 20px solid #e5881d;
+    overflow-x: hidden;
+    min-height: 280vh;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        border: 10px solid #e5881d;
+        background-size: cover;
+        background-position: center center;
+        font-size: 90%; /* Reduce all text size slightly */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        border: 5px solid #e5881d;
+        background-size: cover;
+        background-position: center center;
+        font-size: 80%; /* Further reduce all text size */
+    }
+}
+
+@keyframes slowFireAnimation {
+    0% { opacity: 1; }
+    40% { opacity: 1; }
+    45% { opacity: 0.8; }
+    55% { opacity: 0.8; }
+    60% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+/***********BIRD************/
+.bird-img, .bird-img2 {
+    position: absolute;
+    top: 90px;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bird-img {
+    left: 1115px;
+    width: 305px;
+    height: 1500px;
+}
+
+.bird-img2 {
+    left: -75px;
+    width: 305px;
+    height: 1500px;
+}
+
+@media screen and (max-width: 768px) {
+    .bird-img, .bird-img2 {
+        display: none; /* Hide both bird images on small screens */
+    }
+}
+
+.court-of-the-tributes {
+    color: #c05b28;
+    padding: 50px;
+    border-radius: 10px;
+    width: 800px;
+    margin: auto;
+    height: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+    .court-of-the-tributes {
+        width: 90%;
+        height: auto;
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'CustomFont', sans-serif;
+    margin-top: 1vw;
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 7vw;  
+    }
+}
+
+.placement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vw;
+    margin-bottom: 20px;
+}
+
+.placement h2 {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 24px;
+    color: #c05b28;
+}
+
+@media screen and (max-width: 768px) {
+    .placement h2 {
+        font-size: 18px; /* Reduce text size on smaller screens */
+    }
+}
+
+.placement div {
+    background-color: rgba(255, 165, 0, 0.5);
+    width: 100%;
+    padding: 35px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.tribute-box {
+    background-color: #e5881d;
+    height: 250px;
+    border: 1px solid #FFA500;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tribute-box p {
+    margin: 0;
+    font-family: 'CustomFont', sans-serif;
+    font-size: 16px;
+    color: #fffefe;
+    text-align: justify;
+    
+font-family: 'Telegraf', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .tribute-box p {
+        font-size: 9px; /* Reduce paragraph text size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tribute-box p,
+    .tribute-box2 p,
+    .tribute-box3 p,
+    .tribute-box4 p,
+    .tribute-box5 p,
+    .tribute-box6 p,
+    .tribute-box7 p,
+    .tribute-box8 p,
+    .tribute-box9 p,
+    .tribute-box10 p,
+    .tribute-box11 p,
+    .tribute-box12 p,
+    .tribute-box13 p,
+    .tribute-box14 p,
+    .tribute-box15 p,
+    .tribute-box16 p {
+        font-size: 9px; 
+    }
+}
+
+.tribute h3 {
+    position: relative;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    color: #c05b28;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-family: 'CustomFont', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .tribute h3 {
+        font-size: 18px; /* Reduce heading text size */
+    }
+}
+
+
+.navbar {
+    font-family: 'CustomFont', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 20px;
+    position: fixed; /* Fixes the navbar to the left side */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it's on top of other content */
+  }
+  
+  .nav-links {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: 60px; /* Changed to left for left-aligned display */
+    background-color: #e5881d;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    font-family: 'CustomFont', sans-serif;
+
+  }
+  
+  .nav-links.active {
+    display: block;
+  }
+  
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+    font-family: 'CustomFont', sans-serif;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    font-family: 'CustomFont', sans-serif;
+  }
+
+  .nav-links a:hover {
+    background-color: #992C23 ;
+    border-radius: 5px;
+}
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 20px; 
+    margin-left: 2vw;
+  }
+  
+  .hamburger span {
+    height: 4px;
+    width: 25px;
+    background-color: #e5881d;
+    margin: 3px 0;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px;
+      width: 100%; /* Allow full width on smaller screens */
+      height: 0vw; /* Auto height for smaller screens */
+    }
+  
+    .nav-links {
+      width: 100%; /* Full width for smaller screens */
+      left: 0; /* Align to the left edge */
+    }
+  }
+  
